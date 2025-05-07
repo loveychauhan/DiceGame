@@ -36,13 +36,18 @@ export default NumberSelector;
 
 const NumberSelectorContainer = styled.div`
   .flex {
-    display: flex;
+    display: grid;
     gap: 12px;
+    place-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    @media (max-width: 540px) {
+      grid-template-columns: repeat(3, 2fr);
+    }
   }
   p {
     font-size: 24px;
     font-weight: 600;
-    text-align: end;
+    text-align: center;
   }
   .error {
     height: 28px;

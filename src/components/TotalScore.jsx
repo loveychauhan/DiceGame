@@ -18,8 +18,14 @@ const ScoreContainer = styled.div`
   h1 {
     font-size: 100px;
     line-height: 100px;
+    @media (max-width: 764px) {
+      font-size: 64px;
+    }
   }
   p {
     font-size: 24px;
+    @media (max-width: 764px) {
+      font-size: 18px;
+    }
   }
 `;

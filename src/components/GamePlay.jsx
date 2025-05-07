@@ -69,6 +69,11 @@ const MainContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 764px) {
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+    }
   }
   .btns {
     margin-top: 32px;
